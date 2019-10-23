@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030A4E0B25D39011861C4117 /* LEDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E28CA03A713D724649FCD /* LEDColor.swift */; };
+		1ADF8935ABE0F370B6F68FB9 /* RobotColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D67A9D684163323C82C2C9 /* RobotColorViewController.swift */; };
 		4181265DB13CEF4BBBD8538A /* RobotControlAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0D39691B6E3ABD5E35A3C /* RobotControlAppDelegate.swift */; };
 		52945F181FE750CD6D0C76DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC4521A3A833FEF6E7352F5 /* Assets.xcassets */; };
 		5C91AF48CC172DAF36D2EDBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51320C0E8A4A10B58ADBDD78 /* Main.storyboard */; };
+		6199397E2416278CA488030A /* RobotAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5C815C81ED113E9D071DB /* RobotAPI.swift */; };
 		A57F0F61A587B76737C1E99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDF6D3E476FAF3C3B3FFBC3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0595E356A1269C2B2D1F0D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA5C815C81ED113E9D071DB /* RobotAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotAPI.swift; sourceTree = "<group>"; };
 		4BC4521A3A833FEF6E7352F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51320C0E8A4A10B58ADBDD78 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94F0D39691B6E3ABD5E35A3C /* RobotControlAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotControlAppDelegate.swift; sourceTree = "<group>"; };
+		A5D67A9D684163323C82C2C9 /* RobotColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotColorViewController.swift; sourceTree = "<group>"; };
 		E9E9BD80391AFB77B3B5F010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE3E28CA03A713D724649FCD /* LEDColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDColor.swift; sourceTree = "<group>"; };
 		F3C8F6F4C10892B96A0AE4D3 /* RobotControl.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RobotControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -26,15 +32,10 @@
 		2BE2FA94A71900FC480DAE3C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE3E28CA03A713D724649FCD /* LEDColor.swift */,
+				2BA5C815C81ED113E9D071DB /* RobotAPI.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		2D6DECDC44DD516ACB3001A1 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		3BB5678D5CC53E00F8603488 = {
@@ -50,7 +51,6 @@
 			children = (
 				F4E94434CE33866771463248 /* App */,
 				E54683AA96B69BCA39A676E2 /* Assets */,
-				2D6DECDC44DD516ACB3001A1 /* Common */,
 				B1FE5B65419B03726F04235C /* Controller */,
 				2BE2FA94A71900FC480DAE3C /* Model */,
 			);
@@ -68,6 +68,7 @@
 		B1FE5B65419B03726F04235C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5D67A9D684163323C82C2C9 /* RobotColorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,6 +124,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 3BB5678D5CC53E00F8603488;
@@ -152,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030A4E0B25D39011861C4117 /* LEDColor.swift in Sources */,
+				6199397E2416278CA488030A /* RobotAPI.swift in Sources */,
+				1ADF8935ABE0F370B6F68FB9 /* RobotColorViewController.swift in Sources */,
 				4181265DB13CEF4BBBD8538A /* RobotControlAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -288,7 +293,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RobotControl/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RobotControl;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -302,7 +310,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RobotControl/App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.RobotControl;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;

@@ -1,4 +1,5 @@
-// © 2019 Ralf Ebert — RobotControl
+// © 2019 Ralf Ebert — iOS Example Project: RobotControl
+// License: https://opensource.org/licenses/MIT
 
 import UIKit
 
