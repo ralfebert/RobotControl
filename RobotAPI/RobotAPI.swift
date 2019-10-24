@@ -3,7 +3,7 @@
 
 import Foundation
 
-class RobotAPI {
+public class RobotAPI {
 
     private let urlSession = URLSession.shared
     private let jsonDecoder = JSONDecoder()
@@ -11,9 +11,11 @@ class RobotAPI {
 
     private let url = URL(string: "https://schulungsroboter.ngrok.io/color")!
 
-    var notificationQueue = DispatchQueue.main
+    public init() {}
 
-    func getColor(completionHandler: @escaping (LEDColor) -> Void) {
+    public var notificationQueue = DispatchQueue.main
+
+    public func getColor(completionHandler: @escaping (LEDColor) -> Void) {
 
         let task = self.urlSession.dataTask(with: self.url) { data, _, error in
             guard let data = data, error == nil else {
@@ -31,7 +33,7 @@ class RobotAPI {
         task.resume()
     }
 
-    func setColor(color: LEDColor, completionHandler: (() -> Void)? = nil) {
+    public func setColor(color: LEDColor, completionHandler: (() -> Void)? = nil) {
         var request = URLRequest(url: self.url)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = ["Content-Type": "application/json"]

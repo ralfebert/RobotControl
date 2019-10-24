@@ -7,14 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030A4E0B25D39011861C4117 /* LEDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E28CA03A713D724649FCD /* LEDColor.swift */; };
 		1ADF8935ABE0F370B6F68FB9 /* RobotColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D67A9D684163323C82C2C9 /* RobotColorViewController.swift */; };
 		4181265DB13CEF4BBBD8538A /* RobotControlAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0D39691B6E3ABD5E35A3C /* RobotControlAppDelegate.swift */; };
 		52945F181FE750CD6D0C76DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC4521A3A833FEF6E7352F5 /* Assets.xcassets */; };
 		5C91AF48CC172DAF36D2EDBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51320C0E8A4A10B58ADBDD78 /* Main.storyboard */; };
-		6199397E2416278CA488030A /* RobotAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5C815C81ED113E9D071DB /* RobotAPI.swift */; };
 		A57F0F61A587B76737C1E99A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDF6D3E476FAF3C3B3FFBC3 /* LaunchScreen.storyboard */; };
+		BFD92F5823618CF8008B870F /* LEDColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD92F5723618CF8008B870F /* LEDColor+UIColor.swift */; };
+		BFD92F6223618E77008B870F /* RobotAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD92F6023618E77008B870F /* RobotAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFD92F6523618E77008B870F /* RobotAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD92F5E23618E77008B870F /* RobotAPI.framework */; };
+		BFD92F6623618E77008B870F /* RobotAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFD92F5E23618E77008B870F /* RobotAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFD92F6C23618E91008B870F /* LEDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E28CA03A713D724649FCD /* LEDColor.swift */; };
+		BFD92F6D23618E91008B870F /* RobotAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA5C815C81ED113E9D071DB /* RobotAPI.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFD92F6323618E77008B870F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A49E2E298A0FA5266A432F28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFD92F5D23618E77008B870F;
+			remoteInfo = RobotAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFD92F6B23618E77008B870F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFD92F6623618E77008B870F /* RobotAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0595E356A1269C2B2D1F0D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -23,25 +51,39 @@
 		51320C0E8A4A10B58ADBDD78 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94F0D39691B6E3ABD5E35A3C /* RobotControlAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotControlAppDelegate.swift; sourceTree = "<group>"; };
 		A5D67A9D684163323C82C2C9 /* RobotColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotColorViewController.swift; sourceTree = "<group>"; };
+		BFD92F5723618CF8008B870F /* LEDColor+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LEDColor+UIColor.swift"; sourceTree = "<group>"; };
+		BFD92F5E23618E77008B870F /* RobotAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RobotAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD92F6023618E77008B870F /* RobotAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RobotAPI.h; sourceTree = "<group>"; };
+		BFD92F6123618E77008B870F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E9BD80391AFB77B3B5F010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE3E28CA03A713D724649FCD /* LEDColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDColor.swift; sourceTree = "<group>"; };
-		F3C8F6F4C10892B96A0AE4D3 /* RobotControl.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RobotControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C8F6F4C10892B96A0AE4D3 /* RobotControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXGroup section */
-		2BE2FA94A71900FC480DAE3C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EE3E28CA03A713D724649FCD /* LEDColor.swift */,
-				2BA5C815C81ED113E9D071DB /* RobotAPI.swift */,
+/* Begin PBXFrameworksBuildPhase section */
+		BFD92F5B23618E77008B870F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
-			path = Model;
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFD92F6A23618E77008B870F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD92F6523618E77008B870F /* RobotAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
 		3BB5678D5CC53E00F8603488 = {
 			isa = PBXGroup;
 			children = (
 				68198EC101BCFFA41EFBF9F8 /* RobotControl */,
+				BFD92F5F23618E77008B870F /* RobotAPI */,
 				7309D24F41376F754F5D6BC3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +94,6 @@
 				F4E94434CE33866771463248 /* App */,
 				E54683AA96B69BCA39A676E2 /* Assets */,
 				B1FE5B65419B03726F04235C /* Controller */,
-				2BE2FA94A71900FC480DAE3C /* Model */,
 			);
 			path = RobotControl;
 			sourceTree = "<group>";
@@ -61,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				F3C8F6F4C10892B96A0AE4D3 /* RobotControl.app */,
+				BFD92F5E23618E77008B870F /* RobotAPI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,8 +111,20 @@
 			isa = PBXGroup;
 			children = (
 				A5D67A9D684163323C82C2C9 /* RobotColorViewController.swift */,
+				BFD92F5723618CF8008B870F /* LEDColor+UIColor.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD92F5F23618E77008B870F /* RobotAPI */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E28CA03A713D724649FCD /* LEDColor.swift */,
+				2BA5C815C81ED113E9D071DB /* RobotAPI.swift */,
+				BFD92F6023618E77008B870F /* RobotAPI.h */,
+				BFD92F6123618E77008B870F /* Info.plist */,
+			);
+			path = RobotAPI;
 			sourceTree = "<group>";
 		};
 		E54683AA96B69BCA39A676E2 /* Assets */ = {
@@ -94,6 +148,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BFD92F5923618E77008B870F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD92F6223618E77008B870F /* RobotAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		4D1459428F8806EE73D48014 /* RobotControl */ = {
 			isa = PBXNativeTarget;
@@ -101,15 +166,36 @@
 			buildPhases = (
 				299F574A569D3CBB411F3644 /* Sources */,
 				863920F0D8521C6928F872D6 /* Resources */,
+				BFD92F6A23618E77008B870F /* Frameworks */,
+				BFD92F6B23618E77008B870F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BFD92F6423618E77008B870F /* PBXTargetDependency */,
 			);
 			name = RobotControl;
 			productName = RobotControl;
 			productReference = F3C8F6F4C10892B96A0AE4D3 /* RobotControl.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BFD92F5D23618E77008B870F /* RobotAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFD92F6723618E77008B870F /* Build configuration list for PBXNativeTarget "RobotAPI" */;
+			buildPhases = (
+				BFD92F5923618E77008B870F /* Headers */,
+				BFD92F5A23618E77008B870F /* Sources */,
+				BFD92F5B23618E77008B870F /* Frameworks */,
+				BFD92F5C23618E77008B870F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotAPI;
+			productName = RobotAPI;
+			productReference = BFD92F5E23618E77008B870F /* RobotAPI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -118,6 +204,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					BFD92F5D23618E77008B870F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
 			};
 			buildConfigurationList = 368B4B3C2D0FFCBFC61CB6FF /* Build configuration list for PBXProject "RobotControl" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -132,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				4D1459428F8806EE73D48014 /* RobotControl */,
+				BFD92F5D23618E77008B870F /* RobotAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFD92F5C23618E77008B870F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -154,14 +253,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030A4E0B25D39011861C4117 /* LEDColor.swift in Sources */,
-				6199397E2416278CA488030A /* RobotAPI.swift in Sources */,
 				1ADF8935ABE0F370B6F68FB9 /* RobotColorViewController.swift in Sources */,
 				4181265DB13CEF4BBBD8538A /* RobotControlAppDelegate.swift in Sources */,
+				BFD92F5823618CF8008B870F /* LEDColor+UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD92F5A23618E77008B870F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD92F6C23618E91008B870F /* LEDColor.swift in Sources */,
+				BFD92F6D23618E91008B870F /* RobotAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFD92F6423618E77008B870F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFD92F5D23618E77008B870F /* RobotAPI */;
+			targetProxy = BFD92F6323618E77008B870F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0CDF6D3E476FAF3C3B3FFBC3 /* LaunchScreen.storyboard */ = {
@@ -290,6 +405,7 @@
 		B144BB8B75B311A9F847E250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RobotControl/App/Info.plist;
@@ -304,9 +420,77 @@
 			};
 			name = Debug;
 		};
+		BFD92F6823618E77008B870F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RobotAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RobotAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFD92F6923618E77008B870F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RobotAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RobotAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C676681A9EBFDA2F788DE625 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RobotControl/App/Info.plist;
@@ -338,6 +522,15 @@
 			buildConfigurations = (
 				51C6597A46AE6C51F4622DCC /* Debug */,
 				5911AE16FADBBDEAA8D9834F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFD92F6723618E77008B870F /* Build configuration list for PBXNativeTarget "RobotAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD92F6823618E77008B870F /* Debug */,
+				BFD92F6923618E77008B870F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

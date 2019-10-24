@@ -1,6 +1,7 @@
 // © 2019 Ralf Ebert — iOS Example Project: RobotControl
 // License: https://opensource.org/licenses/MIT
 
+import RobotAPI
 import UIKit
 
 class RobotColorViewController: UIViewController {
@@ -35,7 +36,7 @@ class RobotColorViewController: UIViewController {
         self.redSlider.value = Float(self.color.red)
         self.greenSlider.value = Float(self.color.green)
         self.blueSlider.value = Float(self.color.blue)
-        self.view.backgroundColor = self.color.toUIColor()
+        self.view.backgroundColor = self.color.uiColor
     }
 
     // MARK: - Actions
@@ -69,7 +70,7 @@ class RobotColorViewController: UIViewController {
         self.sendColor()
     }
 
-    @IBAction func sliderValueChanged(_: Any) {
+    @IBAction func sliderValueChanged() {
         let red = UInt8(self.redSlider.value)
         let green = UInt8(self.greenSlider.value)
         let blue = UInt8(self.blueSlider.value)

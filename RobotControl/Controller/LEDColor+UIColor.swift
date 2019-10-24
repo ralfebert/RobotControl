@@ -1,16 +1,13 @@
 // © 2019 Ralf Ebert — iOS Example Project: RobotControl
 // License: https://opensource.org/licenses/MIT
 
-import Foundation
-import UIKit // TODO: remove
+import RobotAPI
+import UIKit
 
-struct LEDColor: Codable {
+extension LEDColor {
 
-    let red: UInt8
-    let green: UInt8
-    let blue: UInt8
+    var uiColor: UIColor {
 
-    func toUIColor() -> UIColor {
         func convert(_ value: UInt8) -> CGFloat {
             CGFloat(value) / 255
         }

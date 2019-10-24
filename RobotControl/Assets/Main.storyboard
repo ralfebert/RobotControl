@@ -39,7 +39,7 @@
                                                 </constraints>
                                                 <connections>
                                                     <action selector="sliderTouchUpInside" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yjc-G3-s5v"/>
-                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pEe-Lb-dLN"/>
+                                                    <action selector="sliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="nkR-zr-WNU"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -61,7 +61,7 @@
                                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="sliderTouchUpInside" destination="BYZ-38-t0r" eventType="touchUpInside" id="2kt-wQ-wcg"/>
-                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GLD-Ex-d60"/>
+                                                    <action selector="sliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="qan-wZ-pJw"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -81,7 +81,7 @@
                                                 <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="sliderTouchUpInside" destination="BYZ-38-t0r" eventType="touchUpInside" id="dq6-8a-lz0"/>
-                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fwv-xp-jKR"/>
+                                                    <action selector="sliderValueChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="nNE-aM-szL"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
